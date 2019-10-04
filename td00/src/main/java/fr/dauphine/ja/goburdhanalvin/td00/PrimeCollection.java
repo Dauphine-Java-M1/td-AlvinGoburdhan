@@ -43,7 +43,7 @@ private ArrayList<Integer> numbers;
     	ArrayList<Integer> numbers = new ArrayList<Integer>();
     	PrimeCollection pc = new PrimeCollection(numbers);
     
-    	pc.initRandom(100,1000);
+    	pc.initRandom(100,2000);
     	pc.printPrimes(numbers);
     	System.out.println(pc);
     
