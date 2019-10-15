@@ -19,3 +19,10 @@ Classpath est un paramètre passé à une machine virtuelle Java qui définit le
 5. public static void main(String[] args) {
 6. GetField, SetOfInteger
 7. refactor
+
+MODIF2
+
+
+exercice 3 
+2.a le test s'est bien déroulé (vert)
+2.b il y a une erreur concernant la fonction testPrimeCollection() (rouge)
