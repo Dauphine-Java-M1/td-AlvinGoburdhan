@@ -1,7 +1,7 @@
 package fr.dauphine.ja.goburdhanalvin.shapes;
 
 /**
- * Hello world!
+ * 
  *
  */
 public class Point 
@@ -40,23 +40,24 @@ public class Point
 		return "Point [point x=" + x + ", point y=" + y + "]";
 	}
 	
-	public boolean isSameAs(Point p1, Point p2) {
+	public boolean isSameAs(Point p) {
 		
-		if(p1.getX() == p2.getX() && p1.getY() == p2.getY())
+		if(this.x == p.getX() && this.y == p.getY())
 			return true; 
 		return false;
 	}
 	
+	public Point translate(int dx,int dy) {
+		
+		return new Point(dy,dx);
+	}
 	
-	 
 	public static void main( String[] args )
     {
 		Point p1=new Point(1,2);
 		Point p2=p1;
 		Point p3=new Point(1,2);
 		
-		System.out.println(p1==p2);
-		System.out.println(p1==p3);
-		
+		System.out.println(p1.isSameAs(p3));			
     }
 }
