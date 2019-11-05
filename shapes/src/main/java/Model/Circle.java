@@ -1,6 +1,6 @@
-package fr.dauphine.ja.goburdhanalvin.shapes;
+package Model;
 
-public class Circle {
+public class Circle extends Shape {
 	private Point centre;
 	private double rayon;
 
@@ -17,7 +17,7 @@ public class Circle {
 		this.centre = p;
 		this.rayon = rayon;
 	}
-
+	
 	public Point getP() {
 		return this.centre;
 	}

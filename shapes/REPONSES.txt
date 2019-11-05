@@ -126,6 +126,13 @@ EXERCICE 5
 
 4) Il faut redéfinir la méthode toString pour afficher les caractéristiques de ring.
 
+TP MVC *------------------------------------------------------------*
+
+Exercice 1
+
+5. paintComponent() est appelée par un listener défini par l'utilisateur (repaint()).
+
+6. Awt est un framework graphique qui repose sur les composants natifs de l'OS sous-jacent et ne fonctionnera pas de la meme facon sur tous les systèmes.Contrairement à Swing que ne dépend pas de l'OS et qui réalise lui même les composants(buttons, labels, text, checkboxes, ).
 
 
 

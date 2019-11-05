@@ -1,4 +1,4 @@
-package fr.dauphine.ja.goburdhanalvin.shapes;
+package Model;
 
 /**
  * 

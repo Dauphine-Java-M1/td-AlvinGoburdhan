@@ -1,21 +1,18 @@
-package fr.dauphine.ja.goburdhanalvin.shapes;
+package Model;
 
-public class Ring {
+public class Ring extends Circle {
 	
 	private Circle centre ;
-	private int rayon;
+	private static int rayon;
 	private int rayonInterne;
 	
 	public Ring(){
+		super(null, rayon);
 		this.centre = new Circle(null, rayon);
 		this.rayon = 0;
 		this.rayonInterne = 0;
 	}
-	
-	public Circle getCentre() {
-		return this.centre;
-	}
-	
+		
 	public double getInternRadius(){
 		return this.rayonInterne;
 	}

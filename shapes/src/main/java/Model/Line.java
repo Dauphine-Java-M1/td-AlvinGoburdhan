@@ -1,12 +1,12 @@
-package fr.dauphine.ja.goburdhanalvin.shapes;
+package Model;
 
 import java.util.LinkedList;
 
-public class LigneBrisée {
+public class Line extends Shape{
 	private LinkedList<Point> ligne ;
 	private int nbMax;
 	
-	public LigneBrisée(int nbMax) {
+	public Line(int nbMax) {
 		this.ligne = new LinkedList<Point>();
 		this.setNbmax(nbMax);
 	}
