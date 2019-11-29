@@ -1,0 +1,71 @@
+goburdhan alvin
+
+TD 00 *----------------------------------------*
+
+EXERCICE 1 
+
+4) Apache Maven 3.6.0
+
+6) Le repertoire Target contient classes et maven-status 
+
+8) Classpath est un paramètre passé à une machine virtuelle Java qui définit le chemin d'accès au répertoire où se trouvent les classes et les packages Java afin qu'elle les exécute.
+
+
+
+EXERCICE 3 
+
+1) aucun attribut manifest principal dans target/td00-1.0-SNAPSHOT.jar
+2) java compile  puis java-cp 
+3) System.out.println();
+4) toString
+5) public static void main(String[] args) {
+6) GetField, SetOfInteger
+7) refactor
+
+td 0 bis *-----------------------------------------*
+
+1) git init -> git local
+
+3) git add : pom.xlm(configuration de maven), App.java, RESPONSES.txt 
+
+4) git commit -m initial import
+! commenté lors d'un commit
+
+5) 
+	-	pc.initRandom(100,1000);
+	+       pc.initRandom(100,2000);
+        	pc.printPrimes(numbers);
+        	System.out.println(pc);
+
+la ligne marqué par '+' représente la ligne comportant des nouvelles modifications apportées
+
+6) 
+git add src/main/java/fr/dauphine/ja/goburdhanalvin/td00/PrimeCollection.java
+git commit -m 'Increase random generator upper bound'
+Ca contient seulement les modification apportées au fichier cloné
+
+7) En apportant des modifications sur la même ligne du fichier REPONSES.txt cela aurait créer un conflit et git nous aurait proposer de choisir entre les deux modifications apportées.
+
+8) 7a1bcd5439c6ed593e31003d00e15f1670a09287
+
+EXERCICE 2 
+
+2) git remote add origin https://github.com/Dauphine-Java-M1/td-AlvinGoburdhan.git
+3) git push origin master
+4) git clone https://github.com/Dauphine-Java-M1/td-AlvinGoburdhan.git clone-de-javaavance
+
+5) ERREUR 
+
+6) REPONSES.txt contient les modifications ajoutée au début du fichier et à la fin du fichier.
+
+7) il y a aurait un conflit car les modifications étaient sur la même ligne
+
+
+EXERCICE 3 
+ 
+2) Une fenêtre JUnit affiche un test valide 
+En remplacant true par false, le test n'est plus valide
+La methode AssertTrue verifie la condition en parametre est vrai ou non.
+
+
+
