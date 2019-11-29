@@ -15,10 +15,11 @@ public class MyDisplay extends JPanel implements Observer {
 	private World w;
 	
 	
-	@Override
+	/*@Override
 	protected void paintComponent(Graphics g) {
 		g.drawLine(10, 10, 10, 10);
 	}
+	*/
 	
 	public static void main(String []args){
 		JFrame frame = new JFrame("Java Avancé - Graphic Display");
@@ -51,4 +52,12 @@ public class MyDisplay extends JPanel implements Observer {
 		this.w = w;
 	}
 
+	
+	protected void paintComponent(Graphics g) {
+		for(Shape shape : World.getShapeList()) {
+			shape.draw(g);
+		}
+	
+	
+	
 }
