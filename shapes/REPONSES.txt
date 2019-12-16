@@ -4,50 +4,51 @@ Alvin Goburdhan
 tp1 revision *------------------------------------------*
 
 
-1)Un nouvel objet Point() est créé avec des variable x et y non initialisé.  
+1) Fonctionne car un constructeur par défaut a été automatiquement crée
 
-2)The variables x et y sont privates.
-remplacé par public 
+2) Les variables x et y ne sont pas déclarés dans la classe TestPoint et ce sont des variables privates, il faut donc les remplacer par public ou protected 
 
-3)il s'agit du principe de l'encapsulation pour que les autres utilisateurs ne puissent pas modifier les données comme ils le veulent , il faut donc utiliser des acceseurs.
+3) Il s'agit du principe de l'encapsulation pour que les autres utilisateurs ne puissent pas modifier les données comme ils le veulent , il faut donc utiliser des acceseurs.De plus, TestPoint peut apporter des modif à Point.	
 
-4) oui, c'est une méthode get qui permet de récupérer la valeur d’une variable privée.
+4) Oui, ce sont les méthodes get et set qui permettent de récupérer ou modifier la valeur d’une variable privée.
 
-5)erreur , il faut implémenter le contructeur Point()
+5) Erreur, il faut implémenter le contructeur Point() car le constructeur n'est plus utilisable.
 
-6) ca fonctionne
+6) Ne pas oublier de mettre this pour considérer les variables de l'objet (éviter de les confondre avec les paramétres) 
 
 7) Ajouter une variable static et l’incrémenter à chaque appel du constructeur.
 
 
-8) A l'aide de la signature et des parametres données
+8) A l'aide de la signature et des parametres données (types et nombres)
 
 
 EXERCICE 2 
 
-1)True puis False car le point P3 a une nouvelle adresse mémoire contrairement a p1 et p2
+1) True puis False car le point P3 a une nouvelle adresse mémoire contrairement a p1 et p2
 
 
-3) L'index de p2 est 0 alors qu'il n'a pas été ajouté directement dans la list car p2 est le même objet que p1 qui a été ajouté dans la liste.
+3) IndexOf utilise equals eet l'index de p2 est 0 alors qu'il n'a pas été ajouté directement dans la list car p2 est le même objet que p1 qui a été ajouté dans la liste.
 
 L'index de p3 est -1 car il n'a pas été trouvé dans la liste
 
-Il faut redefinir equals 
+Il faut redefinir IndexOf avec SameIs
 
 
 EXERCICE 3 
 
-5)
+2) Exception "ArrayIndexoutOfBound", il faut ajouter une variable	
 
-6) pointCapacity est le nombre de points max défini dans le constructeur et nbPoints est le nombre de points dans la liste 
+5) Exception java.lang.NullPointerException
 
+6) pointCapacity et nbPoint ne sert plus à rien les new points s'ajoutent à la fin et il n y a plus de capacité définie, de meme size() permet de connaitre le nb de point
+	
 EXERCICE 4
 
-1) void translate(dx, dy) ou Point translate(dx, dy) :
+1) soit void translate(dx, dy) ou soit Point translate(dx, dy) en remplacant les coordonnées du point initial		
 
-5) c2 n’est pas modifié par la méthode translate dans le cas ou elle retourne un nouveau Circle, il faudrait faire  c2 = c2.translate(1, 1).
+5) p a également changé donc c, il faut envoyé un nouveau point.
 
-6) Ca ne translate pas le cercle car on appelle la fonction translate de la classe point, il faut utiliser directement la fonction translate de Circle 
+6) on récupère la valeur et ce point est translaté mais le cercle n'a pas été translaté car c'est la méthode translate de la classe Point qui a été appelée, il faut utiliser directement la fonction translate de Circle 
 
 
 9) On utilise Static car cette fonction n’appartient pas à un Circle en particulier.
@@ -55,7 +56,7 @@ EXERCICE 4
 
 EXERCICE 5
 
-1) Non car un anneau et un cercle n’ont pas des méthodes en commun donc l’héritage.
+1) Oui car un Ring est un Cercle avec 1 var de plus
 
 4) Il faut redéfinir la méthode toString pour afficher les caractéristiques de ring.
 
